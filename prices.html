@@ -1,0 +1,244 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TeamTR | Prices</title>
+    <!-- FontAwesome 6 CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="prices.css">
+    <style>
+        /* Rules Page Specific Styles */
+        .rules-container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+            animation: fadeInUp 0.8s ease;
+        }
+        
+        .rules-title {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 2rem;
+            text-align: center;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: white;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+            position: relative;
+            padding-bottom: 1rem;
+        }
+        
+        .rules-title::after {
+            content: '';
+            position: absolute;
+            width: 150px;
+            height: 4px;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            border-radius: 2px;
+        }
+        
+        .rules-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            background: rgba(25, 25, 25, 0.8);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(255, 215, 0, 0.2);
+        }
+        
+        .rules-table thead th {
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+            color: var(--primary);
+            font-size: 1.2rem;
+            padding: 1.2rem;
+            text-align: left;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .rules-table tbody tr:nth-child(even) {
+            background: rgba(40, 40, 40, 0.6);
+        }
+        
+        .rules-table tbody tr:hover {
+            background: rgba(0, 0, 0, 0.05);
+        }
+        
+        .rules-table td {
+            padding: 1rem 1.2rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            vertical-align: top;
+        }
+        
+        .rule-name {
+            font-weight: 600;
+            color: var(--primary);
+            width: 60%;
+        }
+        
+        .rule-Ceza {
+            font-weight: 700;
+            color: var(--secondary);
+        }
+        
+        .important-note {
+            margin-top: 2rem;
+            padding: 1.5rem;
+            background: rgba(39, 0, 43, 0.1);
+            border-left: 4px solid var(--secondary);
+            border-radius: 15px;
+            font-size: 0.9rem;
+            line-height: 1.6;
+            box-shadow: 0 0 20px rgba(44, 1, 61, 0.8);
+        }
+        
+        @media (max-width: 768px) {
+            .rules-title {
+                font-size: 2.2rem;
+            }
+            
+            .rules-table thead {
+                display: none;
+            }
+            
+            .rules-table tr {
+                display: block;
+                margin-bottom: 1rem;
+                border-bottom: 2px solid rgba(255, 215, 0, 0.2);
+            }
+            
+            .rules-table td {
+                display: block;
+                text-align: right;
+                padding-left: 50%;
+                position: relative;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            }
+            
+            .rules-table td::before {
+                content: attr(data-label);
+                position: absolute;
+                left: 1.2rem;
+                width: 45%;
+                padding-right: 1rem;
+                font-weight: 600;
+                text-align: left;
+                color: var(--primary);
+            }
+            
+            .rule-name {
+                width: 100%;
+                padding-top: 1.5rem;
+            }
+            
+            .rule-Ceza {
+                padding-bottom: 1.5rem;
+            }
+        }
+
+        a{
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+<header id="header">
+        <img class="logo" src="https://i.hizliresim.com/hm3cuwr.jpg" alt="TeamTR Logo" />
+        <div class="nav-container">
+            <a class="nav" href="index.html">Home</a>
+            <a class="nav" href="prices.html">Prices</a>
+        </div>
+    </header>
+    
+    <main>
+        <div class="bg-pattern"></div>
+        <div class="particles" id="particles"></div>
+        
+        <div class="rules-container">
+            <h1 class="rules-title">Depo Prices</h1>
+            
+            <table class="rules-table">
+                <thead>
+                    <tr>
+                        <th class="rule-name">Depo</th>
+                        <th class="rule-Ceza">Prices</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="rule-name" data-label="GC">NoTax & QQ Mini Reme/Qeme </td>
+                        <td class="rule-Ceza" data-label="Fiyat"><a href="https://www.instagram.com/teamtr.support?igsh=dHp2M2liMXdlamwz&utm_source=qr" target="_blank" rel="noopener" title="Instagram"><i class="fab fa-instagram"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td class="rule-name" data-label="GC">Left Reme/Leme</td>
+                        <td class="rule-Ceza" data-label="Fiyat"><a href="https://www.instagram.com/teamtr.support?igsh=dHp2M2liMXdlamwz&utm_source=qr" target="_blank" rel="noopener" title="Instagram"><i class="fab fa-instagram"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td class="rule-name" data-label="GC">Right Reme/Leme</td>
+                        <td class="rule-Ceza" data-label="Fiyat"><a href="https://www.instagram.com/teamtr.support?igsh=dHp2M2liMXdlamwz&utm_source=qr" target="_blank" rel="noopener" title="Instagram"><i class="fab fa-instagram"></i></a></td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <div class="important-note">
+                <p><strong>NOT:</strong> Depolu veya kefilli girmek için, takım yetkililerinden başka kimseden alım yapmayınız!</p>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        // Header scroll effect
+        window.addEventListener('scroll', function() {
+            const header = document.getElementById('header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+        
+        // Create particles
+        function createParticles() {
+            const particlesContainer = document.getElementById('particles');
+            const particleCount = 30;
+            
+            for (let i = 0; i < particleCount; i++) {
+                const particle = document.createElement('div');
+                particle.classList.add('particle');
+                
+                const size = Math.random() * 4 + 2;
+                particle.style.width = `${size}px`;
+                particle.style.height = `${size}px`;
+                
+                particle.style.left = `${Math.random() * 100}%`;
+                particle.style.bottom = `-${size}px`;
+                
+                const duration = Math.random() * 10 + 10;
+                particle.style.animationDuration = `${duration}s`;
+                
+                particle.style.animationDelay = `${Math.random() * 10}s`;
+                
+                particlesContainer.appendChild(particle);
+            }
+        }
+        
+        // Initialize particles when page loads
+        window.addEventListener('load', createParticles);
+    </script>
+</body>
+</html>
